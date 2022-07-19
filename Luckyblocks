@@ -1,0 +1,162 @@
+local luckyblock = Instance.new("ScreenGui")
+local box = Instance.new("Frame")
+local cre = Instance.new("TextLabel")
+local note = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local rainbow = Instance.new("TextButton")
+local diamond = Instance.new("TextButton")
+local speed = Instance.new("TextButton")
+local superlucky = Instance.new("TextButton")
+local normal = Instance.new("TextButton")
+local jump = Instance.new("TextButton")
+local open = Instance.new("TextButton")
+--Properties:
+luckyblock.Name = "luckyblock"
+luckyblock.Parent = game.Players.LocalPlayer.PlayerGui
+
+box.Name = "box"
+box.Parent = luckyblock
+box.BackgroundColor3 = Color3.new(1, 1, 0)
+box.BackgroundTransparency = 0.5
+box.BorderColor3 = Color3.new(1, 1, 0)
+box.Position = UDim2.new(0.223650396, 0, 0.307692289, 0)
+box.Size = UDim2.new(0, 320, 0, 265)
+box.Active = true
+box.Draggable = true
+
+cre.Name = "cre"
+cre.Parent = box
+cre.BackgroundColor3 = Color3.new(0, 0, 0)
+cre.BackgroundTransparency = 0.5
+cre.Size = UDim2.new(0, 320, 0, 23)
+cre.Font = Enum.Font.SourceSans
+cre.Text = "made by Le Phan Nhat Huy"
+cre.TextColor3 = Color3.new(0, 0, 0)
+cre.TextSize = 14
+
+note.Name = "note"
+note.Parent = box
+note.BackgroundColor3 = Color3.new(0, 0, 0)
+note.BackgroundTransparency = 0.5
+note.Position = UDim2.new(0, 0, 0.905660391, 0)
+note.Size = UDim2.new(0, 320, 0, 25)
+note.Font = Enum.Font.SourceSans
+note.Text = "Pls add the credit if you use my script "
+note.TextColor3 = Color3.new(0, 0, 0)
+note.TextSize = 14
+
+close.Name = "close"
+close.Parent = box
+close.BackgroundColor3 = Color3.new(1, 1, 0)
+close.BackgroundTransparency = 0.5
+close.Position = UDim2.new(0.931249976, 0, 0, 0)
+close.Size = UDim2.new(0, 22, 0, 23)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.new(0, 0, 0)
+close.TextSize = 14
+
+rainbow.Name = "rainbow"
+rainbow.Parent = box
+rainbow.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+rainbow.Position = UDim2.new(0, 0, 0.0867924541, 0)
+rainbow.Size = UDim2.new(0, 142, 0, 50)
+rainbow.Font = Enum.Font.SourceSans
+rainbow.Text = "rainbow"
+rainbow.TextColor3 = Color3.new(0, 0, 0)
+rainbow.TextSize = 14
+
+diamond.Name = "diamond"
+diamond.Parent = box
+diamond.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+diamond.Position = UDim2.new(0, 0, 0.403773606, 0)
+diamond.Size = UDim2.new(0, 142, 0, 50)
+diamond.Font = Enum.Font.SourceSans
+diamond.Text = "diamond"
+diamond.TextColor3 = Color3.new(0, 0, 0)
+diamond.TextSize = 14
+
+speed.Name = "speed"
+speed.Parent = box
+speed.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+speed.Position = UDim2.new(0, 0, 0.716981173, 0)
+speed.Size = UDim2.new(0, 142, 0, 50)
+speed.Font = Enum.Font.SourceSans
+speed.Text = "speed hack"
+speed.TextColor3 = Color3.new(0, 0, 0)
+speed.TextSize = 14
+
+superlucky.Name = "superlucky"
+superlucky.Parent = box
+superlucky.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+superlucky.Position = UDim2.new(0.556249976, 0, 0.086792469, 0)
+superlucky.Size = UDim2.new(0, 142, 0, 50)
+superlucky.Font = Enum.Font.SourceSans
+superlucky.Text = "superlucky"
+superlucky.TextColor3 = Color3.new(0, 0, 0)
+superlucky.TextSize = 14
+
+normal.Name = "normal"
+normal.Parent = box
+normal.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+normal.Position = UDim2.new(0.556249976, 0, 0.403773606, 0)
+normal.Size = UDim2.new(0, 142, 0, 50)
+normal.Font = Enum.Font.SourceSans
+normal.Text = "normal"
+normal.TextColor3 = Color3.new(0, 0, 0)
+normal.TextSize = 14
+
+jump.Name = "jump"
+jump.Parent = box
+jump.BackgroundColor3 = Color3.new(0.333333, 1, 1)
+jump.Position = UDim2.new(0.556249976, 0, 0.716981173, 0)
+jump.Size = UDim2.new(0, 142, 0, 50)
+jump.Font = Enum.Font.SourceSans
+jump.Text = "jump power hack"
+jump.TextColor3 = Color3.new(0, 0, 0)
+jump.TextSize = 14
+
+open.Name = "open"
+open.Parent = luckyblock
+open.BackgroundColor3 = Color3.new(0.666667, 1, 0)
+open.Position = UDim2.new(0, 0, 0.773175538, 0)
+open.Size = UDim2.new(0, 87, 0, 29)
+open.Font = Enum.Font.SourceSans
+open.Text = "OPEN"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 14
+-- Scripts:
+
+rainbow.MouseButton1Down:connect(function()
+game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
+end)
+
+diamond.MouseButton1Down:connect(function()
+game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
+end)
+
+superlucky.MouseButton1Down:connect(function()
+game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+end)
+
+normal.MouseButton1Down:connect(function()
+game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+end)
+
+close.MouseButton1Down:connect(function()
+box.Visible = false
+end)
+
+open.MouseButton1Down:connect(function()
+box.Visible = true
+end)
+
+speed.MouseButton1Down:connect(function()
+game.Workspace.hiksdude.Humanoid.WalkSpeed = 100 -- ur name 
+end)
+
+jump.MouseButton1Down:connect(function()
+game.Workspace.game.hiksdude.Humanoid.JumpPower = 40 -- u can custuom this stupid number XD
+end)
+
+-- This script made by blgo glolol Youtube channel
